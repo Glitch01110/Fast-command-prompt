@@ -127,13 +127,13 @@ Fast-Command-Prompt~#: 99
 
 | Option | Command | Description | Confirmation |
 |:---:|:---:|---|:---:|
-| `1` | `apt update` | Update the package list from repositories | ❌ No |
+| `1` | `apt update` | Update the package list from repositories | ✅ Yes |
 | `2` | `apt full-upgrade -y` | Perform a full system upgrade (non-interactive) | ✅ Yes |
 | `3` | `shutdown now` | Shut down the system (5 second delay) | ✅ Yes |
-| `4` | `apt autoremove -y` | Remove unnecessary packages automatically | ❌ No |
-| `5` | `apt autoclean` | Clean the package cache | ❌ No |
-| `c` / `clear` | `clear` | Clear the screen and refresh menu | ❌ No |
-| `99` | `exit` | Exit the application | ❌ No |
+| `4` | `apt autoremove -y` | Remove unnecessary packages automatically | ✅ Yes |
+| `5` | `apt autoclean` | Clean the package cache | ✅ Yes |
+| `c` / `clear` | `clear` | Clear the screen and refresh menu | ✅ Yes |
+| `99` | `exit` | Exit the application | ✅ Yes |
 
 ### Command Details
 
