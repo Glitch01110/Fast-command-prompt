@@ -33,7 +33,7 @@ def GUI():
                        [+] By: {github}
                        [+] Version: {version}
             
-             [1] update tool  [2] full upgrade system  [3] Restart the system  [c] clear screen
+             [1] update tool  [2] full upgrade system  [3] Shut down the system  [c] clear screen
             
              [4] autoremove unnecessary packages  [5] autoclean package cache
 
@@ -107,9 +107,9 @@ def Command():
                     except KeyboardInterrupt:
                         print("\n[!] Restart cancelled.\n")
                         continue
-                    execute_command("reboot", "Restarting system")
+                    execute_command("shutdown now", "Shutting down system")
                 else:
-                    print("[!] Restart cancelled.\n")
+                    print("[!] Shutdown cancelled.\n")
                     
             elif choice in ["clear", "c"]:
                 GUI()
