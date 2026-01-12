@@ -129,7 +129,7 @@ Fast-Command-Prompt~#: 99
 |:---:|:---:|---|:---:|
 | `1` | `apt update` | Update the package list from repositories | ❌ No |
 | `2` | `apt full-upgrade -y` | Perform a full system upgrade (non-interactive) | ✅ Yes |
-| `3` | `reboot` | Restart the system (5 second delay) | ✅ Yes |
+| `3` | `shutdown now` | Shut down the system (5 second delay) | ✅ Yes |
 | `4` | `apt autoremove -y` | Remove unnecessary packages automatically | ❌ No |
 | `5` | `apt autoclean` | Clean the package cache | ❌ No |
 | `c` / `clear` | `clear` | Clear the screen and refresh menu | ❌ No |
@@ -139,7 +139,7 @@ Fast-Command-Prompt~#: 99
 
 - **Option 1 (Update)**: Refreshes the package list from all configured repositories
 - **Option 2 (Upgrade)**: Upgrades all installed packages to their latest versions. **Requires confirmation**
-- **Option 3 (Reboot)**: Restarts the system. **Requires confirmation** and has a 5-second cancellation window
+- **Option 3 (Shutdown)**: Shuts down the system. **Requires confirmation** and has a 5-second cancellation window
 - **Option 4 (Autoremove)**: Removes packages that were automatically installed as dependencies but are no longer needed
 - **Option 5 (Autoclean)**: Cleans the local repository cache of retrieved package files
 - **Clear (c)**: Instantly clears the screen and redraws the menu without restarting the program
@@ -154,7 +154,7 @@ Fast-Command-Prompt~#: 99
 The tool includes safety confirmations for potentially dangerous operations:
 
 - **System Upgrade**: Confirms before upgrading all packages
-- **System Reboot**: Confirms before restarting, then provides a 5-second cancellation window
+- **System Shutdown**: Confirms before shutting down, then provides a 5-second cancellation window
 
 ### Example Safety Flow
 
@@ -219,7 +219,7 @@ Exit? (yes/no):
                        [+] By: https://github.com/Glitch01110
                        [+] Version: 1.0
 
-[1] update tool  [2] full upgrade system  [3] Restart the system  [c] clear screen
+[1] update tool  [2] full upgrade system  [3] Shut down the system  [c] clear screen
 
 [4] autoremove unnecessary packages  [5] autoclean package cache
 
@@ -238,14 +238,14 @@ Fast-Command-Prompt~#:
 - 🔒 **Backup your data**: Always backup important data before performing system upgrades
 - 💻 **Linux commands**: Package management commands (`apt`) only work on Debian/Ubuntu-based Linux distributions
 - 🛡️ **Root access**: Some commands require `sudo` or root access to execute
-- ⏱️ **Reboot delay**: System restart has a 5-second cancellation window for safety
+- ⏱️ **Shutdown delay**: System shutdown has a 5-second cancellation window for safety
 
 ### Best Practices
 
 - ✅ Always update the package list (`option 1`) before upgrading (`option 2`)
 - ✅ Use `autoremove` (`option 4`) regularly to keep your system clean
 - ✅ Use `autoclean` (`option 5`) to free up disk space periodically
-- ✅ Only restart the system (`option 3`) when necessary and after saving your work
+- ✅ Only shut down the system (`option 3`) when necessary and after saving your work
 - ✅ Read confirmation prompts carefully before confirming dangerous operations
 - ✅ Use Ctrl+C if you need to cancel an operation
 
